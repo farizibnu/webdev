@@ -128,11 +128,3 @@
     grid-row-end: 8;
     background-color: gray;
 }
-
-/* .red {
-    grid-column-start: 1;
-    grid-column-end: span col4-start;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    background-color: red;
-} */
