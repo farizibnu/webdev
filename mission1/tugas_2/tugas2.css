@@ -41,6 +41,10 @@ body, h1, h2, h3, h4, h5, h6, input {
     padding-bottom: 20px;
 }
 
+.padding-bottom-50 {
+    padding-bottom: 50px;
+}
+
 .margin-right-20 {
     margin-right: 30px;
 }
@@ -103,16 +107,30 @@ body, h1, h2, h3, h4, h5, h6, input {
     margin-bottom: 20px;
 }
 
-.btn {
-    font-size: 1.125rem;
+.button {
+    font-size: 1.025rem;
+    font-weight: 500;
+    background: #65D777;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid transparent;
+    padding: 8px 16px;
 }
 
-.form-control {
+.form {
     font-size: 1.125rem;
+    display: block;
+    border-radius: 5px 0 0 5px;
+    padding: 14px 18px;
+    border: none;
 }
 
 .input-group {
-    border-radius: 3px;
+    height: 52px;
+    display: block;
+    width: auto;
+    justify-content: center;
+    box-shadow: 0 0 1px 0 rgba(56,64,79,0.3), 0 1px 1px 0 rgba(9,24,54,0.24), 0 2px 5px 0 rgba(9,24,54,0.06);
 }
 
 .rounded {
@@ -216,4 +234,22 @@ a:hover {
 
 .text-bold {
     font-weight: 700;
+}
+
+@media screen and (max-width:830px) {
+    .newsletter {
+        width: 100%;
+    }
+
+    .title-text {
+        font-size: 1.625rem;
+        height: 65px;
+        width: auto;
+    }
+
+    .news-title {
+        font-size: 1.125rem;
+        height: 54px;
+        width: auto;
+    }
 }
