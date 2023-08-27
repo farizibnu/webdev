@@ -8,33 +8,243 @@
     <link rel="stylesheet" href="tugas2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Source+Serif+4:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <section id="title">
-        <div class="container-fluid">
-            <nav class="navbar">
-                <img src="images/title.svg" alt="">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">View all lessons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Toolkit</a>
-                    </li>
-                </ul>
+        <div class="container-fluid padding-0">
+            <nav class="navbar padding-0">
+                <img class="title-img" src="images/title.svg" alt="title-img">
+                <div class="navbar-nav d-flex flex-row-reverse">
+                    <div class="p-2 margin-right-20">
+                        <a class="gray" href="#">Toolkit</a>
+                    </div>
+                    <div class="p-2 margin-right-20">
+                        <a class="gray" href="#">View all lessons</a>
+                    </div>
+                </div>
             </nav>
-            <div class="row">
-                <div class="container">
-                    <h1>An <span>easy to follow design course</span> for people who do amazing things.</h1>
+        </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="title-text margin-center">An <span>easy to follow design course</span> for people who do amazing
+                things.
+            </h1>
+        </div>
+        <div class="container-fluid justify-content-center">
+            <div class="col-12">
+                <h5 class="news-title margin-center med-gray">Receive a design lesson in your inbox each week, hand
+                    crafted by a
+                    design pro.
+                    Learn at your own pace, and apply it to your real life work.
+                </h5>
+            </div>
+            <div class="col-6 margin-center margin-top-30">
+                <div class="input-group rounded">
+                    <input type="text" class="form-control" placeholder="Email address" aria-label="Email address"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-success" type="button" id="button-addon2">Get started</button>
                 </div>
             </div>
-            <div class="row">
 
+        </div>
+
+        <div class="container-fluid">
+            <div class="row center">
+                <div class="col-lg-4 padding-lr-10px">
+                    <img src="images/feature1.svg" alt="">
+                    <h3 class="margin-top-30">Curated Resources</h3>
+                    <p class="med-gray margin-top-20 feature-text">Don't know where to start? We've enlisted the world's
+                        top designers to craft
+                        lessons for learning
+                        the tools, techniques & terminology of good design.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="margin-top-20" src="images/feature2.svg" alt="">
+                    <h3 class="margin-top-20">Interactive Content</h3>
+                    <p class="med-gray margin-top-20 feature-text">Learn by doing. Play with design puzzles and
+                        challenging games as you learn.
+                        Test your skills and
+                        explore possibilities.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="margin-top-20" src="images/feature3.svg" alt="">
+                    <h3 class="margin-top-20">Awesome Design Tools</h3>
+                    <p class="med-gray margin-top-20 feature-text">We've curated a list of the best design tools to help
+                        you figure out which ones
+                        to learn, and
+                        discover new and helpful tools you may have never heard of.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="instructors">
+        <div class="container-fluid margin-top-30">
+            <h2 class="center ins-title">Meet your instructors</h2>
+            <p class="center margin-top-20 text-orange">View the complete list</p>
+            <div class="row ins-container p-3">
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-1.avif" alt="instructors-1">
+                    <div>
+                        <h5 class="ins-name">Grace Ng</h5>
+                        <p class="med-gray">I'm co-founder and design lead at Lean Startup Machine and creator of
+                            Validation Board. I'm
+                            also Lean UX coach for The White House and Wharton UPenn. I fight for the users, push
+                            pixels, tweet and write code.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-2.avif" alt="instructors-2">
+                    <div>
+                        <h5 class="ins-name">Kate Rutter</h5>
+                        <p class="med-gray">I'm a maker+designer who loves stickynotes, sketching and startups. At LUXr,
+                            I get to meet
+                            incredible entrepreneurs and help them design great customer experiences. I've worked at
+                            places like Adaptive Path and The Crucible. You can find me on Twitter.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-3.avif" alt="instructors-3">
+                    <div>
+                        <h5 class="ins-name">Cat Noone</h5>
+                        <p class="med-gray">I'm a designer with a love for creating products that are meaningful, simple
+                            and easy to use.
+                            I co-founded and am currently building Liberio, a web app for simple eBook creation and
+                            publishing. In my spare time, I write and speak. I love talking shop on twitter, so let's
+                            chat!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-4.avif" alt="instructors-4">
+                    <div>
+                        <h5 class="ins-name">P.J. Onori</h5>
+                        <p class="med-gray">I'm a design technologist living in San Francisco. I have worked for
+                            companies such as
+                            Adaptive Path, Method and Current TV and worked with clients including the United Nations,
+                            Samsung, Adobe, TED.com and Foodspotting. I am a long-time supporter of open source and have
+                            several of my own including Frank, Iconic and Cue. Follow me on Twitter.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-5.avif" alt="instructors-5">
+                    <div>
+                        <h5 class="ins-name">Nir Eyal</h5>
+                        <p class="med-gray">I write for TechCrunch, Forbes, Psychology Today, and am a frequent speaker
+                            at industry
+                            conferences and Fortune 500 companies. I have Lectured at the Stanford Graduate School of
+                            Business and Design School and have sold two technology companies since 2003.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-6.avif" alt="instructors-6">
+                    <div>
+                        <h5 class="ins-name">Luke Beard</h5>
+                        <p class="med-gray">Designer Co-founder Exposure & leading design and creative at Voyage.
+                            Professional internet
+                            pal. Take photos, build products.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-7.avif" alt="instructors-7">
+                    <div>
+                        <h5 class="ins-name">Kerem Suer</h5>
+                        <p class="med-gray">I'm a designer of digital products in my late 20's who is little too into
+                            simplicity and
+                            pixel-perfection. I studied interactive visual imaging and photography in Missouri, and
+                            somehow ended up in foggy San Francisco designing things with unbelievably talented teams
+                            such as Fitbit, Pinterest, Zendesk, and One Kings Lane.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-8.avif" alt="instructors-8">
+                    <div>
+                        <h5 class="ins-name">Jared Erondu</h5>
+                        <p class="med-gray">I'm a writer and designer from Brooklyn, living in Baltimore. I'm the
+                            co-founder of The
+                            Industry (a design publication) and Evomail (an iPad email app). I advise companies here and
+                            there. In the past I've worked with TED and Treehouse to promote creativity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-9.avif" alt="instructors-9">
+                    <div>
+                        <h5 class="ins-name">Joanne Chang</h5>
+                        <p class="med-gray">I'm a co-founder and design lead at PicCollage. It is a fun and easy way to
+                            create collages
+                            on your mobile devices. I love colors and patterns and the process of bringing ideas to
+                            life. You can find me on Twitter.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-10.avif" alt="instructors-10">
+                    <div>
+                        <h5 class="ins-name">Jon Gold</h5>
+                        <p class="med-gray">an equal command of technology and form • functional programming (oc)cultist
+                            • design tools
+                            @airbnbdesign • writing: http://jon.gold/txt</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-11.avif" alt="instructors-11">
+                    <div>
+                        <h5 class="ins-name">Marc Edwards</h5>
+                        <p class="med-gray">I'm the founder of Bjango, an indie Mac and iOS developer. I'm also a
+                            designer. I co-host a
+                            podcast called Iterate with Rene Ritchie and Seth Clifford. Sometimes I write articles about
+                            design for Bjango's website. I occasionally write for Smashing Magazine and speak at
+                            conferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex p-3">
+                    <img class="ins-img" src="images/ins-12.avif" alt="instructors-12">
+                    <div>
+                        <h5 class="ins-name">Kyle Bragger</h5>
+                        <p class="med-gray">Kyle Bragger is co-founder of Exposure, the best photography storytelling
+                            tool on the web.
+                            Previously, he was a member of Elepath, a product design studio. He also created the
+                            developer/designer community Forrst and want-to-do list Thinglist.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="newsletter">
+        <div class="container-fluid">
+            <div class="col-6 md-col-6 newsletter bg-light-grey">
+                <h4 class="text-bold">Join 400,000+ others in learning design</h4>
+                <p class="med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email address" aria-label="Email address"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-success" type="button" id="button-addon2">Get started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container-fluid margin-top-0 padding-bottom-20">
+            <div class="d-flex">
+                <p class="med-gray px-2">© 2022</p>
+                <div class="flex-auto"></div>
+                <div class="d-flex flex-row-reverse">
+                    <a class="med-gray px-3" href="#">Legal</a>
+                    <a class="med-gray px-3" href="#">Curators</a>
+                    <a class="med-gray px-3" href="#">Contact</a>
+                    <a class="med-gray px-3" href="#">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
