@@ -62,6 +62,11 @@ body, h1, h2, h3, h4, h5, h6, input {
     margin-bottom: 0;
 }
 
+.margin-top-25 {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
 .margin-top-0 {
     margin-top: 0;
 }
@@ -200,6 +205,11 @@ h2 {
     width: 300px;
     margin: auto;
     padding: 30px;
+}
+
+.lines {
+    border-top: 0.5px solid rgb(243, 243, 243);
+    padding-top: 10px;
 }
 
 .flex-auto {
