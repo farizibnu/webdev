@@ -1,0 +1,30 @@
+#menu {
+    height: 100vh;
+    width: auto;
+    display: flex;
+}
+
+.main-menu {
+    height: max-content;
+    width: auto;
+}
+
+.self-section {
+    background-color: rgb(218, 222, 254);
+}
+
+.burlywood {
+    background-color: rgb(218, 222, 254);
+}
+
+.self {
+    display: flex;
+}
+
+.cart-section {
+    background-color: rgb(195, 232, 253);
+}
+
+.wheat {
+    background-color: rgb(195, 232, 253);
+}
