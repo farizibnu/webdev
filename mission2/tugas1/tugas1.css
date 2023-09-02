@@ -2,6 +2,12 @@
     height: 100vh;
     width: auto;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    border-bottom: 3px solid rgb(235, 235, 235);
+    display: flex;
 }
 
 .main-menu {
@@ -9,22 +15,99 @@
     width: auto;
 }
 
-.self-section {
-    background-color: rgb(218, 222, 254);
+.logo {
+    height: 25px;
+    margin: 20px 20px 20px 50px;
 }
 
-.burlywood {
-    background-color: rgb(218, 222, 254);
+.title {
+    font-size: 2.4rem;
+    margin: 10px;
+    font-family: 'Contrail One', cursive;
 }
 
 .self {
     display: flex;
 }
 
-.cart-section {
-    background-color: rgb(195, 232, 253);
+.line {
+    border-left: 2px solid rgb(235, 235, 235);
 }
 
-.wheat {
-    background-color: rgb(195, 232, 253);
+.quantity {
+    padding-bottom: 7px;
+    width: 45px;
+    height: 35px;
+    text-align: right;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.operator {
+    display: flex;
+    align-content: center;
+}
+
+.total {
+    text-align: right;
+    padding: 0 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.product-pic {
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    width: 15rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.padding-r-50 {
+    text-align: end
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+.padding-tb-10 {
+    padding: 10px 0;
+}
+
+.padding-b-10 {
+    padding-bottom: 10px;
+}
+
+.margin-t-20 {
+    margin-top: 20px;
+}
+
+.margin-b-50 {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:830px) {
+    #menu{
+        display: block;
+    }
+
+ 
 }
