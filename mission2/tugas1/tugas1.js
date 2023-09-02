@@ -7,6 +7,8 @@ const cartTotal = document.getElementById('cart-total');
 const cartSubTotal = document.getElementById('cart-subtotal');
 const cartTax = document.getElementById("cart-tax");
 const removeButton = document.getElementById("remove-btn");
+const generateReceiptButton = document.getElementById('generate-receipt');
+const receiptContent = document.getElementById('receipt-content');
 
 let cart = {};
 const taxRate = 0.11;
@@ -78,7 +80,10 @@ function updateCart() {
 }
 
 function formatToRupiah(number) {
-    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR'}).format(number);
+    return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR'
+    }).format(number);
 }
 
 function removeFromCart() {
@@ -88,7 +93,7 @@ function removeFromCart() {
     cartTotal.textContent = 0;
     total = 0;
     cart = {};
-    alert('Items removed from cart!');
+    alert('Produk berhasil dihapus dari keranjang!');
 }
 
 removeButton.addEventListener('click', () => {
@@ -96,3 +101,41 @@ removeButton.addEventListener('click', () => {
         removeFromCart();
     }
 });
+
+function calculateSubtotal() {
+    let subtotal = 0;
+
+    for (const productName in cart) {
+        const product = cart[productName];
+        subtotal += product.price * product.quantity;
+    }
+
+    return subtotal;
+}
+
+generateReceiptButton.addEventListener('click', () => {
+    generateReceipt();
+});
+
+function generateReceipt() {
+    let receiptHTML = ``;
+    receiptHTML += `<table class="table"><thead><tr><th>Nama</th><th>Harga</th><th>Jumlah</th><th>Total</th></tr></thead><tbody>`;
+
+    for (const productName in cart) {
+        const product = cart[productName];
+        const subtotal = product.price * product.quantity;
+        receiptHTML += `<tr><td>${productName}</td><td>${formatToRupiah(product.price)}</td><td>${product.quantity}</td><td>${formatToRupiah(subtotal)}</td></tr>`;
+    }
+
+    const subtotal = calculateSubtotal();
+    const tax = subtotal * taxRate;
+    const total = subtotal + tax;
+
+    receiptHTML += `</tbody></table>`;
+    receiptHTML += `<p><span class="d-flex justify-content-between">Total Pembelian: <span class="bold">${formatToRupiah(subtotal)}</span></span></p>`;
+    receiptHTML += `<p><span class="d-flex justify-content-between">Pajak 11%: <span class="bold">${formatToRupiah(tax)}</span></span></p>`;
+    receiptHTML += `<p><span class="d-flex justify-content-between">Total Bayar: <span class="bold">${formatToRupiah(total)}</span></span></p>`;
+
+    receiptContent.innerHTML = receiptHTML;
+    $('#receiptModal').modal('show');
+}

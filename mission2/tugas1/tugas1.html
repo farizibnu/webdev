@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="tugas1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +25,8 @@
             <div class="container">
                 <div class="container self">
                     <div class="row justify-content-center">
-                        <div class="card col-lg-3 col-md-4 no-padding product" data-product-name="Nike Air Max Darwin" data-product-image="/images/air-max.jpg" style="width: 15rem;">
+                        <div class="card col-lg-3 col-md-4 no-padding product" data-product-name="Nike Air Max Darwin"
+                            data-product-image="/images/air-max.jpg" style="width: 15rem;">
                             <img src="/images/air-max.jpg" class="card-img-top" alt="air-max">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike Air Max Darwin</h2>
@@ -40,7 +41,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike InfinityRN" data-product-image="/images/grey.jpg" style="width: 15rem;">
+                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike InfinityRN"
+                            data-product-image="/images/grey.jpg" style="width: 15rem;">
                             <img src="/images/grey.jpg" class="card-img-top" alt="grey">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike InfinityRN</h2>
@@ -55,7 +57,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike Free Run" data-product-image="/images/free-run.jpeg" style="width: 15rem;">
+                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike Free Run"
+                            data-product-image="/images/free-run.jpeg" style="width: 15rem;">
                             <img src="/images/free-run.jpeg" id="img" class="card-img-top" alt="free-run">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike Free Run</h2>
@@ -71,7 +74,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike x Off-White" data-product-image="/images/air-jordan.jpg" style="width: 15rem;">
+                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike x Off-White"
+                            data-product-image="/images/air-jordan.jpg" style="width: 15rem;">
                             <img src="/images/air-jordan.jpg" id="img" class="card-img-top" alt="air-jordan">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike x Off-White</h2>
@@ -86,7 +90,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike Pegasus" data-product-image="/images/pegasus.jpg" style="width: 15rem;">
+                        <div class="card col-lg-3 col-md-4 product" data-product-name="Nike Pegasus"
+                            data-product-image="/images/pegasus.jpg" style="width: 15rem;">
                             <img src="/images/pegasus.jpg" id="img" class="card-img-top" alt="pegasus">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike Pegasus</h2>
@@ -101,7 +106,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-3 product" data-product-name="Nike Dunk High" data-product-image="/images/jordan.jpg" style="width: 15rem;">
+                        <div class="card col-lg-3 product" data-product-name="Nike Dunk High"
+                            data-product-image="/images/jordan.jpg" style="width: 15rem;">
                             <img src="/images/jordan.jpg" id="img" class="card-img-top" alt="jordan">
                             <div class="card-body">
                                 <h2 class="card-title bold">Nike Dunk High</h2>
@@ -130,14 +136,37 @@
                     <p class="bold d-flex justify-content-between">Total Pembelian <span id="cart-subtotal">0</span></p>
                     <p class="bold d-flex justify-content-between">Pajak 11% <span id="cart-tax">0</span></p>
                     <p class="bold d-flex justify-content-between">Total Bayar <span id="cart-total">0</span></p>
-                    <button class="btn btn-danger margin-b-50" id="remove-btn">Hapus</button>
+                    <div class="cart-button">
+                        <button class="btn btn-danger margin-b-10" id="remove-btn">Hapus</button>
+                        <button class="btn btn-success margin-b-50" id="generate-receipt">Generate Receipt</button>
+                    </div>
                 </div>
-
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="receiptModal" tabindex="-1" role="dialog" aria-labelledby="receiptModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="receiptModalLabel">Receipt</h5>
+                    <button type="button" class="btn btn-danger close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="receipt-content"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="tugas1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -76,6 +76,11 @@ header {
     width: 15rem;
 }
 
+.cart-button {
+    float: right;
+    width: 150px;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -98,6 +103,10 @@ header {
 
 .margin-t-20 {
     margin-top: 20px;
+}
+
+.margin-b-10 {
+    margin-bottom: 10px;
 }
 
 .margin-b-50 {
