@@ -65,3 +65,14 @@ input {
     font-weight: bold;
     cursor: pointer;   
 }
+
+.AddButton {
+    border: none;
+    padding: 10px;
+    background-color: rgb(244, 142, 74);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+}

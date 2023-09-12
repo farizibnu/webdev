@@ -41,7 +41,7 @@ const Books = () => {
             </div>
         ))}
     </div>
-    <button>
+    <button className='AddButton'>
         <Link to="/add">Add new book</Link>
         </button>
     </div>
